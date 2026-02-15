@@ -1,0 +1,8 @@
+# Directory snapshot before SpecKit execution
+# 1771190805644319778
+
+/tmp/claudev-pr-75247
+├── LICENSE
+└── README.md
+
+1 directory, 2 files

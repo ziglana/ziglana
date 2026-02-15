@@ -1,0 +1,11 @@
+# Directory snapshot after SpecKit execution
+
+/tmp/claudev-pr-75247
+├── assets
+├── index.html
+├── LICENSE
+├── README.md
+├── script.js
+└── style.css
+
+2 directories, 5 files

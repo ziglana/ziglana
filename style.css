@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+#hero {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    text-align: center;
+}
+
+#features {
+    padding: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+#getting-started {
+    padding: 2rem;
+    background-color: #e0e0e0;
+}
+
+#community {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-theme header {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark-theme #hero {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme #getting-started {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme .feature {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    #hero {
+        padding: 1rem;
+    }
+
+    #features {
+        padding: 1rem;
+    }
+
+    #getting-started {
+        padding: 1rem;
+    }
+
+    #community {
+        padding: 1rem;
+    }
+}

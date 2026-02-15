@@ -1,0 +1,22 @@
+# PR #1: [WIP] full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and P...
+
+## Description
+Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.
+
+Original description:
+
+> full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and Proof of Replication (PoRep) for storage proofs. The multi-phase plan covers initial setup, core PoH implementation, consensus and state execution, PoRep, and final optimization for a feature-complete validator, gRPC API.
+
+
+
+<!-- START COPILOT CODING AGENT SUFFIX -->
+
+
+
+<!-- START COPILOT CODING AGENT TIPS -->
+---
+
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.
+
+## Task
+Build a modern static website for ziglana.org - a Zig community focused on AI and crypto on Solana. Model it after ziglang.org but with Solana/crypto/AI branding. Include: landing page with hero section, features grid (Zig + Solana speed, AI inference, crypto primitives), getting started guide, community links, dark theme, responsive design. Use plain HTML/CSS/JS - no frameworks. Make it production-ready.
