@@ -8,42 +8,72 @@
 </head>
 <body>
     <header>
-        <h1>Ziglana</h1>
         <nav>
-            <a href="#features">Features</a>
-            <a href="#getting-started">Getting Started</a>
-            <a href="#community">Community</a>
+            <h1><a href="#">Ziglana</a></h1>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <h2>Zig Community Focused on AI and Crypto on Solana</h2>
-        <p>Explore the intersection of Zig, Solana, AI, and crypto.</p>
-    </section>
-
-    <section id="features">
-        <h2>Features</h2>
-        <div class="grid">
-            <div class="feature">
-                <h3>Zig + Solana Speed</h3>
-                <p>Unleash the power of Zig's performance on the Solana blockchain.</p>
-            </div>
-            <div class="feature">
-                <h3>AI Inference</h3>
-                <p>Perform AI inference directly on Solana with Zig.</p>
-            </div>
-            <div class="feature">
-                <h3>Crypto Primitives</h3>
-                <p>Utilize optimized crypto primitives for secure and efficient development.</p>
+        <div class="hero-content">
+            <h1>Zig Community Focused on AI and Crypto on Solana</h1>
+            <p>Explore the intersection of Zig, Solana, AI, and crypto.</p>
+            <div class="cta-buttons">
+                <a href="#getting-started" class="button primary">Get Started</a>
+                <a href="#community" class="button secondary">Join Community</a>
             </div>
         </div>
     </section>
 
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Zig + Solana Speed</h3>
+                <p>Unleash the power of Zig's performance on the Solana blockchain.</p>
+            </div>
+            <div class="feature-card">
+                <h3>AI Inference On-Chain</h3>
+                <p>Perform AI inference directly on Solana with Zig.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Optimized Crypto Primitives</h3>
+                <p>Utilize optimized crypto primitives for secure and efficient development.</p>
+            </div>
+            <div class="feature-card">
+                <h3>eBPF/SBF Programs</h3>
+                <p>Develop and deploy eBPF and SBF programs with Zig.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Zero-Copy Networking</h3>
+                <p>Achieve high-performance networking with zero-copy techniques.</p>
+            </div>
+            <div class="feature-card">
+                <h3>SIMD Acceleration</h3>
+                <p>Leverage SIMD acceleration for demanding computations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="code-example">
+        <h2>Code Example</h2>
+        <pre><code class="language-zig">const std = @import("std");
+
+pub fn main() !void {
+    std.debug.print("Hello, Ziglana!\n", .{});
+}
+</code></pre>
+    </section>
+
     <section id="getting-started">
         <h2>Getting Started</h2>
-        <p>Follow these steps to get started with Ziglana:</p>
+        <p>Follow these steps to begin your journey with Ziglana:</p>
         <ol>
-            <li>Install Zig.</li>
+            <li>Install <a href="https://ziglang.org/download/">Zig</a>.</li>
             <li>Set up your Solana development environment.</li>
             <li>Explore the Ziglana examples.</li>
         </ol>
@@ -51,10 +81,10 @@
 
     <section id="community">
         <h2>Community</h2>
-        <ul>
-            <li><a href="#">Discord</a></li>
+        <ul class="community-links">
             <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Twitter/X</a></li>
         </ul>
     </section>
 

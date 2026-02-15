@@ -1,6 +1,6 @@
 # Directory snapshot after SpecKit execution
 
-/tmp/claudev-pr-75247
+/tmp/claudev-pr-13795
 ├── assets
 ├── index.html
 ├── LICENSE
