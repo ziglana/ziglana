@@ -1,11 +1,12 @@
 # Directory snapshot before SpecKit execution
-# 1771228044872247358
+# 1771231444854343941
 
-/tmp/claudev-pr-89026
+/tmp/claudev-pr-55854
 ├── index.html
 ├── LICENSE
+├── llms.txt
 ├── README.md
 ├── script.js
 └── style.css
 
-1 directory, 5 files
+1 directory, 6 files
