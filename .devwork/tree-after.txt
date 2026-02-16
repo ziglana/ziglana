@@ -1,6 +1,6 @@
 # Directory snapshot after SpecKit execution
 
-/tmp/claudev-pr-89026
+/tmp/claudev-pr-32006
 ├── index.html
 ├── LICENSE
 ├── llms.txt

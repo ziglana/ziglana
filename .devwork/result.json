@@ -3,8 +3,8 @@
   "tasks_total": 6,
   "tasks_completed": 6,
   "tasks_failed": 0,
-  "planning_ms": 26489,
-  "execution_ms": 3796,
-  "total_ms": 30396,
+  "planning_ms": 324496,
+  "execution_ms": 28346,
+  "total_ms": 352953,
   "error": ""
 }

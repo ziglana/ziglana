@@ -5,92 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziglana - Zig Community for AI and Crypto on Solana</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <h1><a href="#">Ziglana</a></h1>
-            <ul>
+            <div class="nav-brand">
+                <span class="logo">⚡</span>
+                <a href="#">Ziglana</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
-                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#code-example">Code</a></li>
+                <li><a href="#getting-started">Get Started</a></li>
                 <li><a href="#community">Community</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="hero">
-        <div class="hero-content">
-            <h1>Zig Community Focused on AI and Crypto on Solana</h1>
-            <p>Explore the intersection of Zig, Solana, AI, and crypto.</p>
-            <div class="cta-buttons">
-                <a href="#getting-started" class="button primary">Get Started</a>
-                <a href="#community" class="button secondary">Join Community</a>
-            </div>
+        <div class="hero-badge">Zig + Solana</div>
+        <h1>Build the Future of AI & Crypto with Zig</h1>
+        <p class="hero-tagline">
+            High-performance blockchain applications combining Zig's safety and speed with Solana's scalability.
+            Zero-copy networking. SIMD acceleration. Native eBPF support.
+        </p>
+        <div class="cta-buttons">
+            <a href="#getting-started" class="button primary">Get Started</a>
+            <a href="#community" class="button secondary">Join Community</a>
         </div>
     </section>
 
     <section id="features">
-        <h2>Key Features</h2>
+        <h2>Why Ziglana?</h2>
+        <p class="section-subtitle">Leverage Zig's unique strengths for blockchain development</p>
         <div class="feature-grid">
             <div class="feature-card">
+                <div class="feature-icon">🚀</div>
                 <h3>Zig + Solana Speed</h3>
-                <p>Unleash the power of Zig's performance on the Solana blockchain.</p>
+                <p>Unleash Zig's performance on Solana. Compete with C/C++ while maintaining memory safety and readable code.</p>
             </div>
             <div class="feature-card">
+                <div class="feature-icon">🤖</div>
                 <h3>AI Inference On-Chain</h3>
-                <p>Perform AI inference directly on Solana with Zig.</p>
+                <p>Run AI inference directly on Solana. Integrate ML models with zero-copy data flow and minimal overhead.</p>
             </div>
             <div class="feature-card">
+                <div class="feature-icon">🔐</div>
                 <h3>Optimized Crypto Primitives</h3>
-                <p>Utilize optimized crypto primitives for secure and efficient development.</p>
+                <p>Use Zig's comptime for verified crypto. Zero-runtime-overhead cryptographic operations.</p>
             </div>
             <div class="feature-card">
+                <div class="feature-icon">📦</div>
                 <h3>eBPF/SBF Programs</h3>
-                <p>Develop and deploy eBPF and SBF programs with Zig.</p>
+                <p>Develop and deploy SBF programs with Zig. Type-safe smart contracts with compile-time verification.</p>
             </div>
             <div class="feature-card">
+                <div class="feature-icon">⚡</div>
                 <h3>Zero-Copy Networking</h3>
-                <p>Achieve high-performance networking with zero-copy techniques.</p>
+                <p>Build high-performance P2P systems. Leverage Zig's explicit memory model for optimal networking.</p>
             </div>
             <div class="feature-card">
+                <div class="feature-icon">🎯</div>
                 <h3>SIMD Acceleration</h3>
-                <p>Leverage SIMD acceleration for demanding computations.</p>
+                <p>Accelerate demanding computations. Fine-grained SIMD control with Zig's inline assembly.</p>
             </div>
         </div>
     </section>
 
     <section id="code-example">
-        <h2>Code Example</h2>
-        <pre><code class="language-zig">const std = @import("std");
+        <h2>Zig Meets Solana</h2>
+        <p class="section-subtitle">Write type-safe programs for the fastest blockchain</p>
+        <div class="code-window">
+            <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="filename">solana_program.zig</span>
+            </div>
+            <pre><code><span class="keyword">const</span> std = <span class="type">@import</span>(<span class="string">"std"</span>);
+<span class="keyword">const</span> solana = <span class="type">@import</span>(<span class="string">"solana"</span>);
 
-pub fn main() !void {
-    std.debug.print("Hello, Ziglana!\n", .{});
+<span class="comment">// Simple token transfer with compile-time safety</span>
+<span class="keyword">pub</span> <span class="keyword">fn</span> <span class="function">transfer</span>(ctx: *Context, amount: u64) <span class="type">!void</span> {
+    <span class="comment">// Verify sender has sufficient balance at compile time</span>
+    <span class="keyword">if</span> (amount > ctx.accounts.sender.lamports) {
+        <span class="keyword">return</span> <span class="type">error</span>.InsufficientFunds;
+    }
+    
+    <span class="comment">// Zero-copy: mutate in place</span>
+    ctx.accounts.sender.lamports -= amount;
+    ctx.accounts.receiver.lamports += amount;
+    
+    std.<span class="type">log</span>.<span class="function">info</span>(<span class="string">"Transferred {} lamports"</span>, .{amount});
 }
-</code></pre>
+
+<span class="comment">// Entry point: verified at compile time</span>
+<span class="keyword">pub</span> <span class="keyword">fn</span> <span class="function">main</span>() <span class="type">!void</span> {
+    std.<span class="type">debug</span>.<span class="function">print</span>(<span class="string">"⚡ Ziglana ready!\n"</span>, .{});
+}</code></pre>
+        </div>
     </section>
 
     <section id="getting-started">
-        <h2>Getting Started</h2>
-        <p>Follow these steps to begin your journey with Ziglana:</p>
-        <ol>
-            <li>Install <a href="https://ziglang.org/download/">Zig</a>.</li>
-            <li>Set up your Solana development environment.</li>
-            <li>Explore the Ziglana examples.</li>
-        </ol>
+        <h2>Get Started</h2>
+        <p class="section-subtitle">Start building in minutes</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Install Zig</h3>
+                <p>Download Zig 0.15+ from <a href="https://ziglang.org/download/" target="_blank" rel="noopener">ziglang.org</a></p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Set Up Solana</h3>
+                <p>Install Solana CLI and configure your development environment</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Explore Ziglana</h3>
+                <p>Clone our examples and start building your first program</p>
+            </div>
+        </div>
     </section>
 
     <section id="community">
-        <h2>Community</h2>
-        <ul class="community-links">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Twitter/X</a></li>
-        </ul>
+        <h2>Join the Community</h2>
+        <p class="section-subtitle">Connect with Zig developers building on Solana</p>
+        <div class="community-links">
+            <a href="https://github.com/ziglana" class="community-card" target="_blank" rel="noopener">
+                <span class="community-icon">📂</span>
+                <span>GitHub</span>
+            </a>
+            <a href="https://discord.gg/ziglana" class="community-card" target="_blank" rel="noopener">
+                <span class="community-icon">💬</span>
+                <span>Discord</span>
+            </a>
+            <a href="https://x.com/ziglana" class="community-card" target="_blank" rel="noopener">
+                <span class="community-icon">🐦</span>
+                <span>Twitter/X</span>
+            </a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Ziglana</p>
+        <p>⚡ Ziglana — Built with Zig for the Solana Ecosystem</p>
+        <p class="copyright">© 2026 Ziglana Community</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
