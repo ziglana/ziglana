@@ -1,0 +1,4 @@
+Project Name: Ziglana
+Purpose: Static website for the Ziglana community.
+Files: index.html, style.css, script.js, README.md
+Key APIs: None (static website)

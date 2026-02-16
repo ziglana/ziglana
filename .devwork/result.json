@@ -1,10 +1,10 @@
 {
   "success": true,
-  "tasks_total": 4,
-  "tasks_completed": 4,
+  "tasks_total": 6,
+  "tasks_completed": 6,
   "tasks_failed": 0,
-  "planning_ms": 22152,
-  "execution_ms": 4116,
-  "total_ms": 26379,
+  "planning_ms": 26489,
+  "execution_ms": 3796,
+  "total_ms": 30396,
   "error": ""
 }

@@ -227,12 +227,8 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #1a1a2e;  /* Match body background */
-    padding: 2rem;
+    background-color: #292944;
+    padding: 1rem;
     text-align: center;
-    border-top: 1px solid #333;
-}
-
-footer p {
-    color: #888;
+    font-size: 0.9rem;
 }

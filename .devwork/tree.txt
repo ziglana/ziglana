@@ -1,7 +1,7 @@
 # Directory snapshot before SpecKit execution
-# 1771197750544440387
+# 1771228044872247358
 
-/tmp/claudev-pr-13795
+/tmp/claudev-pr-89026
 ├── index.html
 ├── LICENSE
 ├── README.md
