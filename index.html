@@ -27,132 +27,172 @@
 
     <section id="hero">
         <div class="hero-badge">Zig + Solana</div>
-        <h1>Build the Future of AI & Crypto with Zig</h1>
+        <h1>Build the Future of AI &amp; Crypto with Zig</h1>
         <p class="hero-tagline">
             High-performance blockchain applications combining Zig's safety and speed with Solana's scalability.
             Zero-copy networking. SIMD acceleration. Native eBPF support.
         </p>
         <div class="cta-buttons">
-            <a href="#getting-started" class="button primary">Get Started</a>
-            <a href="#community" class="button secondary">Join Community</a>
+            <a href="#getting-started" class="button main">Get Started</a>
+            <a href="#community" class="button">Join Community</a>
         </div>
     </section>
 
-    <section id="features">
-        <h2>Why Ziglana?</h2>
-        <p class="section-subtitle">Leverage Zig's unique strengths for blockchain development</p>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>Zig + Solana Speed</h3>
-                <p>Unleash Zig's performance on Solana. Compete with C/C++ while maintaining memory safety and readable code.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>AI Inference On-Chain</h3>
-                <p>Run AI inference directly on Solana. Integrate ML models with zero-copy data flow and minimal overhead.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔐</div>
-                <h3>Optimized Crypto Primitives</h3>
-                <p>Use Zig's comptime for verified crypto. Zero-runtime-overhead cryptographic operations.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📦</div>
-                <h3>eBPF/SBF Programs</h3>
-                <p>Develop and deploy SBF programs with Zig. Type-safe smart contracts with compile-time verification.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Zero-Copy Networking</h3>
-                <p>Build high-performance P2P systems. Leverage Zig's explicit memory model for optimal networking.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>SIMD Acceleration</h3>
-                <p>Accelerate demanding computations. Fine-grained SIMD control with Zig's inline assembly.</p>
+    <section id="features" class="alt-background">
+        <div class="container">
+            <h2>Why Ziglana?</h2>
+            <p class="section-subtitle">Leverage Zig's unique strengths for blockchain development</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Zig + Solana Speed</h3>
+                    <p>Unleash Zig's performance on Solana. Compete with C/C++ while maintaining memory safety and readable code.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Inference On-Chain</h3>
+                    <p>Run AI inference directly on Solana. Integrate ML models with zero-copy data flow and minimal overhead.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Optimized Crypto Primitives</h3>
+                    <p>Use Zig's comptime for verified crypto. Zero-runtime-overhead cryptographic operations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>eBPF/SBF Programs</h3>
+                    <p>Develop and deploy SBF programs with Zig. Type-safe smart contracts with compile-time verification.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Zero-Copy Networking</h3>
+                    <p>Build high-performance P2P systems. Leverage Zig's explicit memory model for optimal networking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>SIMD Acceleration</h3>
+                    <p>Accelerate demanding computations. Fine-grained SIMD control with Zig's inline assembly.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="code-example">
-        <h2>Zig Meets Solana</h2>
-        <p class="section-subtitle">Write type-safe programs for the fastest blockchain</p>
-        <div class="code-window">
-            <div class="code-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="filename">solana_program.zig</span>
-            </div>
-            <pre><code><span class="keyword">const</span> std = <span class="type">@import</span>(<span class="string">"std"</span>);
-<span class="keyword">const</span> solana = <span class="type">@import</span>(<span class="string">"solana"</span>);
+        <div class="container">
+            <h2>Zig Meets Solana</h2>
+            <p class="section-subtitle">Write type-safe programs for the fastest blockchain</p>
+            <div class="slogan-message">
+                <div class="features">
+                    <div class="title-box">
+                        <h3>A Simple Language</h3>
+                        <p>Focus on debugging your application rather than debugging your programming language knowledge. No hidden control flow. No hidden memory allocations. No preprocessor, no macros.</p>
+                    </div>
+                    <div class="title-box">
+                        <h3>Comptime</h3>
+                        <p>A fresh approach to metaprogramming based on compile-time code execution and lazy evaluation. Call any function at compile-time. Manipulate types as values without runtime overhead.</p>
+                    </div>
+                    <div class="title-box">
+                        <h3>Maintain it with Zig</h3>
+                        <p>Incrementally improve your Rust/Cargo/Cargo project. Use Zig as a zero-dependency, drop-in Solana program compiler that supports cross-compilation out-of-the-box.</p>
+                    </div>
+                </div>
+                <div class="codesample">
+                    <figure>
+                        <figcaption class="zig-cap">index.zig</figcaption>
+                        <pre><code class="zig"><span class="keyword">const</span> std = <span class="keyword">@import</span>(<span class="string">"std"</span>);
+<span class="keyword">const</span> base58 = <span class="builtin">@import</span>(<span class="string">"base58"</span>);
 
-<span class="comment">// Simple token transfer with compile-time safety</span>
-<span class="keyword">pub</span> <span class="keyword">fn</span> <span class="function">transfer</span>(ctx: *Context, amount: u64) <span class="type">!void</span> {
-    <span class="comment">// Verify sender has sufficient balance at compile time</span>
-    <span class="keyword">if</span> (amount > ctx.accounts.sender.lamports) {
-        <span class="keyword">return</span> <span class="type">error</span>.InsufficientFunds;
-    }
-    
-    <span class="comment">// Zero-copy: mutate in place</span>
-    ctx.accounts.sender.lamports -= amount;
-    ctx.accounts.receiver.lamports += amount;
-    
-    std.<span class="type">log</span>.<span class="function">info</span>(<span class="string">"Transferred {} lamports"</span>, .{amount});
+<span class="keyword">test</span> <span class="string">"encode pubkey"</span> {
+    <span class="keyword">const</span> pubkey = <span class="string">"CyZuD7c6jEQKkwN5VHQQyG4D4YHiJK4fGFL5JKVCNq2F"</span>;
+    <span class="keyword">const</span> encoded = <span class="keyword">try</span> base58.encode(pubkey);
+    <span class="keyword">try</span> std.testing.expect(encoded.len &gt; <span class="number">0</span>);
 }
 
-<span class="comment">// Entry point: verified at compile time</span>
-<span class="keyword">pub</span> <span class="keyword">fn</span> <span class="function">main</span>() <span class="type">!void</span> {
-    std.<span class="type">debug</span>.<span class="function">print</span>(<span class="string">"⚡ Ziglana ready!\n"</span>, .{});
+<span class="keyword">pub fn</span> <span class="function">transfer</span>(from: *<span class="type">Wallet</span>, to: *<span class="type">Wallet</span>, amount: <span class="type">u64</span>) <span class="keyword">!</span><span class="type">void</span> {
+    <span class="keyword">if</span> (from.balance &lt; amount) <span class="keyword">return</span> <span class="type">error</span>.InsufficientFunds;
+    from.balance -= amount;
+    to.balance += amount;
 }</code></pre>
+                    </figure>
+                    <figure>
+                        <figcaption class="shell-cap">Shell</figcaption>
+                        <pre><code class="shell"><span class="sgr-32m">$</span> zig build
+<span class="sgr-32_1m">Compiling ziglana-program</span>
+<span class="sgr-32m">Build Summary:</span> 3/3 steps succeeded
+<span class="sgr-32m">Transfer size:</span> 4KB (vs 8KB in Rust)</code></pre>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="getting-started">
-        <h2>Get Started</h2>
-        <p class="section-subtitle">Start building in minutes</p>
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Install Zig</h3>
-                <p>Download Zig 0.15+ from <a href="https://ziglang.org/download/" target="_blank" rel="noopener">ziglang.org</a></p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Set Up Solana</h3>
-                <p>Install Solana CLI and configure your development environment</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Explore Ziglana</h3>
-                <p>Clone our examples and start building your first program</p>
+    <section id="getting-started" class="alt-background">
+        <div class="container">
+            <h2>Getting Started</h2>
+            <p class="section-subtitle">Begin your journey with Ziglana</p>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install Zig</h3>
+                    <p>Download Zig 0.15.0 or later from the official website.</p>
+                    <code class="shell">$ zig version
+0.15.0</code>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Clone Ziglana</h3>
+                    <p>Get the Ziglana framework and examples.</p>
+                    <code class="shell">$ git clone https://github.com/ziglana/ziglana
+$ cd ziglana</code>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Build Your Program</h3>
+                    <p>Compile and deploy your first Solana program.</p>
+                    <code class="shell">$ zig build --release-small
+$ solana program deploy zig-out/program.so</code>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="community">
-        <h2>Join the Community</h2>
-        <p class="section-subtitle">Connect with Zig developers building on Solana</p>
-        <div class="community-links">
-            <a href="https://github.com/ziglana" class="community-card" target="_blank" rel="noopener">
-                <span class="community-icon">📂</span>
-                <span>GitHub</span>
-            </a>
-            <a href="https://discord.gg/ziglana" class="community-card" target="_blank" rel="noopener">
-                <span class="community-icon">💬</span>
-                <span>Discord</span>
-            </a>
-            <a href="https://x.com/ziglana" class="community-card" target="_blank" rel="noopener">
-                <span class="community-icon">🐦</span>
-                <span>Twitter/X</span>
-            </a>
+        <div class="container">
+            <h2>Community</h2>
+            <p class="section-subtitle">Join the Ziglana community</p>
+            <p class="community-message">
+                The Ziglana community is decentralized. Anyone is free to start and maintain their own space for the community to gather.
+                There is no concept of "official" or "unofficial", however, each gathering place has its own moderators and rules.
+            </p>
+            <div class="community-grid">
+                <a href="https://github.com/ziglana" class="community-card" target="_blank" rel="noopener">
+                    <span class="community-icon">🐙</span>
+                    <h3>GitHub</h3>
+                    <p>Explore the source code, contribute, and report issues.</p>
+                </a>
+                <a href="https://discord.gg/ziglana" class="community-card" target="_blank" rel="noopener">
+                    <span class="community-icon">💬</span>
+                    <h3>Discord</h3>
+                    <p>Join the discussion and get help from the community.</p>
+                </a>
+                <a href="https://x.com/ziglana" class="community-card" target="_blank" rel="noopener">
+                    <span class="community-icon">🐦</span>
+                    <h3>X/Twitter</h3>
+                    <p>Follow us for the latest updates and announcements.</p>
+                </a>
+            </div>
+            <div class="main-development-message">
+                <h3>Main Development</h3>
+                <p>The Ziglana repository can be found at <a href="https://github.com/ziglana/ziglana" target="_blank" rel="noopener" class="external-link">GitHub</a>, where we also host the issue tracker and discuss proposals.
+                Contributors are expected to follow Ziglana's Code of Conduct.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>⚡ Ziglana — Built with Zig for the Solana Ecosystem</p>
-        <p class="copyright">© 2026 Ziglana Community</p>
+        <div class="container">
+            <p>&copy; 2024 Ziglana Community. Built with Zig ❤️ Solana.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
