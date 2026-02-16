@@ -1,0 +1,98 @@
+# PR #1: [WIP] full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and P...
+
+## Description
+Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.
+
+Original description:
+
+> full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and Proof of Replication (PoRep) for storage proofs. The multi-phase plan covers initial setup, core PoH implementation, consensus and state execution, PoRep, and final optimization for a feature-complete validator, gRPC API.
+
+
+
+<!-- START COPILOT CODING AGENT SUFFIX -->
+
+
+
+<!-- START COPILOT CODING AGENT TIPS -->
+---
+
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.
+
+## Diff
+```diff
+diff --git a/.devwork/plan.md b/.devwork/plan.md
+new file mode 100644
+index 0000000..051f0b3
+--- /dev/null
++++ b/.devwork/plan.md
+@@ -0,0 +1,5 @@
++# Execution Plan
++
++## Tasks: 4
++
++{"summary":"Create ziglana.org static website modeled after ziglang.org with dark theme, hero, 6-card feature grid, code example, getting started section, and community links using HTML/CSS/JS only.","tasks":[{"id":"T001","tool":"Read","args":{"file_path":"/tmp/claudev-pr-23780/index.html"},"depends_on":[],"description":"Read existing index.html to understand current state of the project"},{"id":"T002","tool":"Read","args":{"file_path":"/tmp/claudev-pr-23780/style.css"},"depends_on":[],"description":"Read existing style.css to understand current styling"},{"id":"T003","tool":"Bash","args":{"command":"curl -s https://ziglang.org/css/style.css 2>/dev/null | head -200"},"depends_on":[],"description":"Fetch more of ziglang.org CSS to understand the exact styling patterns"},{"id":"T004","tool":"WebFetch","args":{"url":"https://ziglang.org/","convert_to":"markdown"},"depends_on":[],"description":"Get complete content from ziglang.org to understand structure and design"}]}
+diff --git a/.devwork/plan_response.txt b/.devwork/plan_response.txt
+new file mode 100644
+index 0000000..b4dae77
+--- /dev/null
++++ b/.devwork/plan_response.txt
+@@ -0,0 +1 @@
++{"summary":"Update existing ziglana.org static website to closely match ziglang.org design - dark theme, font stack, colors, button styles, container widths, spacing. Includes hero, 6-card feature grid, code example, getting started, community links using HTML/CSS/JS only.","tasks":[{"id":"T001","tool":"Read","args":{"file_path":"/tmp/claudev-pr-23780/index.html"},"depends_on":[],"description":"Read existing index.html to understand current structure and content"},{"id":"T002","tool":"Read","args":{"file_path":"/tmp/claudev-pr-23780/style.css"},"depends_on":[],"description":"Read existing style.css to understand current styling and identify changes needed to match ziglang.org design"}]}
+\ No newline at end of file
+diff --git a/.devwork/prompt.txt b/.devwork/prompt.txt
+new file mode 100644
+index 0000000..9191ff7
+--- /dev/null
++++ b/.devwork/prompt.txt
+@@ -0,0 +1,51 @@
++# PR #1: [WIP] full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and P...
++
++## Description
++Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.
++
++Original description:
++
++> full Solana validator in Zig 0.15. Scope includes Leader and Verifier roles. Key features are Proof of History (PoH) generation/verification, Proof of Stake (PoS) for active voting and leader election, an SBF/eBPF interpreter for smart contracts, and Proof of Replication (PoRep) for storage proofs. The multi-phase plan covers initial setup, core PoH implementation, consensus and state execution, PoRep, and final optimization for a feature-complete validator, gRPC API.
++
++
++
++<!-- START COPILOT CODING AGENT SUFFIX -->
++
++
++
++<!-- START COPILOT CODING AGENT TIPS -->
++---
++
++💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.
++
++## Diff
++```diff
++diff --git a/.devwork/plan.md b/.devwork/plan.md
++new file mode 100644
++index 0000000..bf446af
++--- /dev/null
+++++ b/.devwork/plan.md
++@@ -0,0 +1,51 @@
+++# Execution Plan
+++
+++## Tasks: 6
+++
+++{
+++"summary": "Create static website for ziglana.org following ziglang.org design - dark theme, gradient accents, hero with CTA, 6-card feature grid, code example, getting started, community links, sticky nav, smooth scroll, responsive. HTML/CSS/JS only.",
+++"tasks": [
+++{
+++"id": "T001",
+++"tool": "Bash",
+++"args": {"command": "mkdir -p /tmp/claudev-pr-32006"},
+++"depends_on": [],
+++"description": "Create the project directory."
+++},
+++{
+++"id": "T002",
+++"tool": "Write",
+++"args": {"file_path": "/tmp/claudev-pr-32006/index.html", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Ziglana - Zig Community for AI and Crypto on Solana</title>\n    <link rel=\"stylesheet\" href=\"style.css\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap\" rel=\"stylesheet\">\n</head>\n<body>\n    <header>\n        <nav>\n            <div class=\"nav-brand\">\n                <span class=\"logo\">⚡</span>\n                <a href=\"#\">Ziglana</a>\n            </div>\n            <ul class=\"nav-links\">\n                <li><a href=\"#features\">Features</a></li>\n                <li><a href=\"#code-example\">Code</a></li>\n                <li><a href=\"#getting-started\">Get Started</a></li>\n                <li><a href=\"#community\">Community</a></li>\n            </ul>\n        </nav>\n    </header>\n\n    <section id=\"hero\">\n        <div class=\"hero-badge\">Zig + Solana</div>\n        <h1>Build the Future of AI & Crypto with Zig</h1>\n        <p class=\"hero-tagline\">\n            High-performance blockchain applications combining Zig's safety and speed with Solana's scalability.\n            Zero-copy networking. SIMD acceleration. Native eBPF support.\n        </p>\n        <div class=\"cta-buttons\">\n            <a href=\"#getting-started\" class=\"button primary\">Get Started</a>\n            <a href=\"#community\" class=\"button secondary\">Join Community</a>\n        </div>\n    </section>\n\n    <section id=\"features\">\n        <h2>Why Ziglana?</h2>\n        <p class=\"section-subtitle\">Leverage Zig's unique strengths for blockchain development</p>\n        <div class=\"feature-grid\">\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">🚀</div>\n                <h3>Zig + Solana Speed</h3>\n                <p>Unleash Zig's performance on Solana. Compete with C/C++ while maintaining memory safety and readable code.</p>\n            </div>\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">🤖</div>\n                <h3>AI Inference On-Chain</h3>\n                <p>Run AI inference directly on Solana. Integrate ML models with zero-copy data flow and minimal overhead.</p>\n            </div>\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">🔐</div>\n                <h3>Optimized Crypto Primitives</h3>\n                <p>Use Zig's comptime for verified crypto. Zero-runtime-overhead cryptographic operations.</p>\n            </div>\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">📦</div>\n                <h3>eBPF/SBF Programs</h3>\n                <p>Develop and deploy SBF programs with Zig. Type-safe smart contracts with compile-time verification.</p>\n            </div>\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">⚡</div>\n                <h3>Zero-Copy Networking</h3>\n                <p>Build high-performance P2P systems. Leverage Zig's explicit memory model for optimal networking.</p>\n            </div>\n            <div class=\"feature-card\">\n                <div class=\"feature-icon\">🎯</div>\n                <h3>SIMD Acceleration</h3>\n                <p>Accelerate demanding computations. Fine-grained SIMD control with Zig's inline assembly.</p>\n            </div>\n        </div>\n    </section>\n\n    <section id=\"code-example\">\n        <h2>Zig Meets Solana</h2>\n        <p class=\"section-subtitle\">Write type-safe programs for the fastest blockchain</p>\n        <div class=\"code-window\">\n            <div c
+... (truncated)
+```
+
+## Task
+Study https://ziglang.org/ closely and build ziglana.org modeled after it. Use the same font stack, color palette, button styles, container widths, and spacing from ziglang.org CSS. Ziglana = Zig community building AI and crypto on Solana. Include: hero section with gradient background, 6-card feature grid, code example with syntax highlighting, getting started section, community links (GitHub, Discord, X/Twitter). Must be a complete, polished static site (HTML + CSS + JS). Write complete file contents for index.html, style.css, and script.js.
