@@ -1,7 +1,7 @@
 # Directory snapshot before SpecKit execution
-# 1771233443745934283
+# 1771234209592565444
 
-/tmp/claudev-pr-32006
+/tmp/claudev-pr-23780
 ├── index.html
 ├── LICENSE
 ├── llms.txt
